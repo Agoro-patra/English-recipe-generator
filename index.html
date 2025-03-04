@@ -7,44 +7,49 @@
     <title>AI Recipe generator</title>
   </head>
   <body>
-    <header>
-      <h1>Welcome to the AI English recipe generator</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>AI English recipe generator</h1>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the name of the English recipe needed"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        1 teaspoon baking soda
-        <br />
-        2 large eggs
-      </div>
-    </main>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the name of the English recipe needed"
+            autofocus
+            required
+            autocomplete="off"
+            class="prompt"
+          />
+          <input type="submit" class="button" />
+        </form>
+        <div class="recipe">
+          1 teaspoon baking soda
+          <br />
+          2 large eggs
+        </div>
+      </main>
 
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/Agoro-patra" target="_blank"
-        >Agoro Patricia </a
-      >and is
-      <a
-        href="https://github.com/Agoro-patra/English-recipe-generator"
-        target="_blank"
-      >
-        open sourced on GitHub</a
-      >
-      and is
-      <a href="https://ai-english-recipe-generator.netlify.app/" target="_blank"
-        >hosted on netlify.
-      </a>
-    </footer>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/Agoro-patra" target="_blank"
+          >Agoro Patricia </a
+        >and is
+        <a
+          href="https://github.com/Agoro-patra/English-recipe-generator"
+          target="_blank"
+        >
+          open sourced on GitHub</a
+        >
+        and is
+        <a
+          href="https://ai-english-recipe-generator.netlify.app/"
+          target="_blank"
+          >hosted on netlify.
+        </a>
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
