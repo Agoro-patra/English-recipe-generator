@@ -17,14 +17,12 @@ function generateRecipe(event) {
 
   let context =
     "You are amazing recipe expert and makes short recipes.Provide a recipe in basic HTML and seperate each line with a <br />. Make sure to follow the user instructions.Sign the poem with 'SheCodes AI' ";
-  let prompt =
-    "User instructions: Generate English recipe about $(instructionsInput.value)";
-  let apiUrl =
-    "https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apikey}";
+  let prompt = `User instructions: Generate English recipe about ${instructionsInput.value}`;
+  let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   console.log("Generating recipe");
-  console.log("prompt: ${prompt}");
-  console.log("context: ${context}");
+  console.log(`prompt: ${prompt}`);
+  console.log(`context: ${context}`);
 
   //make a call to API //
   axios.get(apiUrl).then(showRecipe);
