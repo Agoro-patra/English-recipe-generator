@@ -31,7 +31,7 @@ form {
   display: flex;
   margin-bottom: 29px;
 }
-.prompt {
+.instructions {
   padding: 16px;
   border: 1px solid rgba(39, 33, 66, 0.5);
   width: 80%;
@@ -62,4 +62,7 @@ footer {
   text-align: center;
   font-size: 14px;
   margin-top: 29px;
+}
+.recipe strong {
+  color: blue;
 }
